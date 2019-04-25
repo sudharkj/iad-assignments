@@ -1,0 +1,35 @@
+#PBS -N hw1
+
+cd ~/iad/hw1
+
+echo "Starting hw1"
+echo ""
+echo ""
+
+# running ray_tutorial.py
+echo "Executing ray_tutorial.py"
+python ray_tutorial.py
+echo "Completed ray_tutorial.py"
+echo ""
+echo ""
+
+# running map_reduce.py
+echo "Executing map_reduce.py"
+# python map_reduce.py 1
+cpus=(1 2 4 8)
+total_times=()
+regex="total time: "
+for cpu in ${cpus[*]}; do
+    output="$(python map_reduce.py ${cpu})"
+    echo "${output}"
+    total_time="${output#*total time: }"
+    total_times+=(${total_time})
+done
+echo "${total_times[*]}"
+python plot_performance.py ${cpus[*]} ${total_times[*]}
+
+echo "Completed map_reduce.py"
+echo ""
+echo ""
+
+echo "Completed execution of hw1"

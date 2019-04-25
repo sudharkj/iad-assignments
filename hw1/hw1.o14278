@@ -1,0 +1,75 @@
+
+########################################################################
+#      Date:           Sat Apr 13 00:43:12 PDT 2019
+#    Job ID:           14278.v-qsvr-1.aidevcloud
+#      User:           u25779
+# Resources:           neednodes=1:ppn=2,nodes=1:ppn=2,walltime=06:00:00
+########################################################################
+
+Starting hw1
+
+
+Executing ray_tutorial.py
+The results are [0, 1, 2, 3]. This took 1.00687837600708 seconds. Run the next cell to see if the exercise was done correctly.
+Success! The example took 1.00687837600708 seconds.
+The losses are [1000.0, 1000.0, 1000.0, 1000.0].
+
+The loss is 4000.0. This took 0.4597141742706299 seconds. Run the next cell to see if the exercise was done correctly.
+Success! The example took 0.4597141742706299 seconds.
+Success! The example took 2.512809991836548 seconds.
+Success! The example took 1.1999220848083496 seconds.
+Ray - serializing
+time:  0.19279837608337402
+
+Ray - deserializing
+time:  0.0004487037658691406
+
+pickle - serializing
+time:  0.36597728729248047
+
+pickle - deserializing
+time:  0.1747725009918213
+Success! The example took 0.015641450881958008 seconds.
+Completed ray_tutorial.py
+
+
+Executing map_reduce.py
+running map reduce with 1 cpus
+Congratulations, the test passed!
+Congratulations, the test passed!
+
+calling reduce_parallel_tree
+reduce time: 2.1124651432037354
+total time: 6.127594470977783
+running map reduce with 2 cpus
+Congratulations, the test passed!
+Congratulations, the test passed!
+
+calling reduce_parallel_tree
+reduce time: 1.2082035541534424
+total time: 3.2170796394348145
+running map reduce with 4 cpus
+Congratulations, the test passed!
+Congratulations, the test passed!
+
+calling reduce_parallel_tree
+reduce time: 0.9063272476196289
+total time: 1.913712739944458
+running map reduce with 8 cpus
+Congratulations, the test passed!
+Congratulations, the test passed!
+
+calling reduce_parallel_tree
+reduce time: 0.9106600284576416
+total time: 1.9173376560211182
+6.127594470977783 3.2170796394348145 1.913712739944458 1.9173376560211182
+Completed map_reduce.py
+
+
+Completed execution of hw1
+
+########################################################################
+# End of output for job 14278.v-qsvr-1.aidevcloud
+# Date: Sat Apr 13 00:45:27 PDT 2019
+########################################################################
+
